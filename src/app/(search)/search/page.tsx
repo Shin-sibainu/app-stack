@@ -40,7 +40,7 @@ export default function Component() {
             <form className="flex items-center bg-background rounded-md shadow-sm">
               <Input
                 type="search"
-                placeholder="Search for apps or tech stacks"
+                placeholder="ex.youtube"
                 className="flex-1 px-4 py-2 rounded-l-md focus:outline-none"
               />
               <Button
@@ -57,7 +57,7 @@ export default function Component() {
               <DropdownMenuTrigger asChild>
                 <Button variant="outline" className="flex items-center gap-2">
                   <FilterIcon className="w-4 h-4" />
-                  Categories
+                  カテゴリ検索
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="start">
@@ -70,7 +70,7 @@ export default function Component() {
                 <DropdownMenuCheckboxItem>Database</DropdownMenuCheckboxItem>
               </DropdownMenuContent>
             </DropdownMenu>
-            <DropdownMenu>
+            {/* <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="outline" className="flex items-center gap-2">
                   <ListOrderedIcon className="w-4 h-4" />
@@ -89,8 +89,8 @@ export default function Component() {
                   </DropdownMenuRadioItem>
                 </DropdownMenuRadioGroup>
               </DropdownMenuContent>
-            </DropdownMenu>
-            <Button>Apply Filters</Button>
+            </DropdownMenu> */}
+            {/* <Button>適用</Button> */}
           </div>
         </div>
 
